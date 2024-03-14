@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 01:10:50 by yamajid           #+#    #+#             */
-/*   Updated: 2024/03/14 01:27:41 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/03/14 16:44:14 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int main(int, char**)
     }
     try
     {
-        numbers[-2] = 0;
+        numbers[2] = 0;
     }
     catch(const std::exception& e)
     {
@@ -61,6 +61,5 @@ int main(int, char**)
         numbers[i] = rand();
     }
     delete []mirror;//
-    std::cout << "here" << std::endl;
     return 0;
 }

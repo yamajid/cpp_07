@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 19:49:39 by yamajid           #+#    #+#             */
-/*   Updated: 2024/03/14 01:46:29 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/03/14 16:41:26 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ class Array{
 
         void print() const{
             unsigned int i;
-            for (i = 0; i < size(); i++){
+            for (i = 0; i < _size; i++){
                 std::cout << _array[i];
             }
         }
@@ -71,7 +71,5 @@ class Array{
         }
         
         ~Array(){
-            if (_array != NULL)
-                delete[] _array;
         }
 };
