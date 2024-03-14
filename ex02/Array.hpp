@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 19:49:39 by yamajid           #+#    #+#             */
-/*   Updated: 2024/03/14 16:41:26 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/03/14 17:46:15 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,13 @@ class Array{
             return _array[n];
         }
         
+        T const & operator[](unsigned int n) const{
+            if (n < 0 || n > size())
+                throw incorrectIndexException();
+            return _array[n];
+        }
+        
         ~Array(){
+            delete []_array;
         }
 };
