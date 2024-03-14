@@ -6,7 +6,7 @@
 #    By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/06 19:36:07 by yamajid           #+#    #+#              #
-#    Updated: 2024/03/13 01:45:27 by yamajid          ###   ########.fr        #
+#    Updated: 2024/03/13 17:08:03 by yamajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ all: $(NAME)
 %.o: %.cpp
 	$(Run) $(FLAGS) -c $< -o $@
 
-$(NAME): $(otherS) Array.hpp
+$(NAME): $(otherS) iter.hpp
 	$(Run) $(FLAGS) -o $(NAME) $(otherS)
 
 clean:
